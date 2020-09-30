@@ -1,0 +1,103 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alimentador</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="TitlePage">Home</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="chart-container">
+                <canvas id="Racao"></canvas>
+                <button id="PostRacao">POST</button>
+                <button id="GetRacao">GET</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="Agua"></canvas>
+                <button id="PostAgua">POST</button>
+                <button id="GetAgua">GET</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="chart-container">
+                <canvas id="Estoque"></canvas>
+                <button id="PostEstoqueAgua">POST Água</button>
+                <button id="PostEstoqueRacao">POST Ração</button>
+                <button id="GetEstoque">GET</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="Relatorio"></canvas>
+                <button id="GetRelatorio">GET</button>
+            </div>
+    </main>
+    <!-- <div id="Texto">
+        <p>Gráfico de Consumo de Ração</p>
+        <p>Gráfico de Consumo de Água</p>
+        <p>Gráfico de Estoque (Ração e Água)</p>
+        <p>Botão de Configurações</p>
+        <p>Botão de Configurações</p>
+        <p>Relatório Mensal</p>
+    </div> -->
+    <button type="button" class="collapsible">Configurações</button>
+    <div class="content">
+        <button type="button" class="collapsible">Horário e quantidade da ração</button>
+        <div class="content">
+            <label for="ConfQuantidade">Meu pet irá comer</label>
+            <input type="text" placeholder="gramas" id="ConfQuantidade" name="ConfQuantidade">
+            <label for="ConfHorario">gramas de ração a cada</label>
+            <input type="text" placeholder="horas" id="ConfHorario" name="ConfHorario">
+            <label>horas.</label>
+            <button type="button">Confirmar</button>
+        </div>
+
+
+        <button type="button" class="collapsible">Avisos</button>
+        <div class="content">
+            <button type="button" class="collapsible">Estoque Água</button>
+            <div class="content">
+                <label for="ConfEstoqueAgua">Quero ser avisado quando o nível do estoque água chegar em</label>
+                <input type="text" placeholder="porcentagem" id="ConfEstoqueAgua" name="ConfEstoqueAgua">
+                <label>%.</label>
+                <button type="button">Confirmar</button>
+            </div>
+            <button type="button" class="collapsible">Estoque Ração</button>
+            <div class="content">
+                <label for="ConfEstoqueAgua">Quero ser avisado quando o nível do estoque ração chegar em</label>
+                <input type="text" placeholder="porcentagem" id="ConfEstoqueRacao" name="ConfEstoqueRacao">
+                <label>%.</label>
+                <button type="button">Confirmar</button>
+            </div>
+            <p>Frequência de Uso</p>
+        </div>
+
+        <button type="button" class="collapsible">Usuário</button>
+        <div class="content">
+
+
+            <label for="Email">Email:</label>
+            <input type="text" placeholder="email" id="Email" name="Email">
+            <button type="button">Confirmar</button>
+            <br><br>
+            <label for="Pet">Nome Pet:</label>
+            <input type="text" placeholder="nome" id="Pet" name="Pet">
+            <button type="button">Confirmar</button>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="script.js"></script>
+<script src="scriptsAPI.js"></script>
+
+</html>
